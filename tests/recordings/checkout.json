@@ -1,0 +1,63 @@
+{
+    "title": "prod",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1333,
+            "height": 958,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "chrome://new-tab-page/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "chrome://new-tab-page/",
+                    "title": "New tab"
+                }
+            ]
+        },
+        {
+            "type": "navigate",
+            "url": "https://www.nursingcenter.com/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://www.nursingcenter.com/",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Sign in"
+                ],
+                [
+                    "header > div > a"
+                ],
+                [
+                    "xpath///*[@id=\"form\"]/header/div/a"
+                ],
+                [
+                    "pierce/header > div > a"
+                ]
+            ],
+            "offsetY": 22,
+            "offsetX": 17.90625,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://www.nursingcenter.com/login",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}

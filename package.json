@@ -1,0 +1,25 @@
+{
+  "name": "smoke-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "smoke": "playwright test tests/smoke_suite --reporter=html",
+    "smoke:login": "playwright test tests/specs/test_login.spec.ts --reporter=html",
+    "report": "npx http-server reports/html -p 8787"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
